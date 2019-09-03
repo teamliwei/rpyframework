@@ -5,10 +5,28 @@
 
 define e = Character("Eileen")
 
-
-# The game starts here.
+init python:
+    from store.util import SceneLoader, TraitManager, FlagManager, ScreenBridge
 
 label start:
+    python:
+
+        # this clears the store cache.
+
+        # this manages flags (applied at flags-tutorial.rpy)
+        fm = FlagManager()
+        fm.newgame()
+
+        # this manages traits (applied at traits-tutorial.rpy)
+        tm = TraitManager()
+        tm.newgame()
+
+        # this manages scenes (applied at scenes-tutorial.rpy)
+        sl = SceneLoader()
+        sl.newgame()
+
+        sb = ScreenBridge()
+        pvars = {}
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -24,10 +42,7 @@ label start:
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
+    jump flags_tutorial
+    
 
     return

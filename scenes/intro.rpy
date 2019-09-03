@@ -12,19 +12,11 @@ label intro_1:
 
     # These display lines of dialogue.
 
-    "I'm not the person who you think I am."
+    "This is the scene loaded through the sceneloader."
 
-    "Those are the very last words my father said to me."
+    "Another dialog."
 
-    "I had hoped he would return to us. Twelve years went by."
-
-    "My mother took us with her and returned to our grandparent's home."
-
-    "Until that one fateful day, I received a letter from someone claiming to be my father's \"Boss\""
-
-    "Attached to that letter was a scholarship to prestigious university in the city."
-
-    "And that is how I began my journey."
+    "Last Dialog."
 
     # This ends the game.
 

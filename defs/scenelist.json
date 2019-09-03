@@ -1,0 +1,16 @@
+{
+    "keyword": {
+            "title": "This is the Title",
+            "desc": "This is the Description.",
+            "flags": [],
+            "goto": "this_is_a_renpy_script_label",
+            "hint": "this is a flavor text that can be used in dialogue."
+        },
+    "intro": {
+            "title": "Intro",
+            "desc": "a short intro to scene loader usage.",
+            "flags": ["arrived"],
+            "goto": "intro_1",
+            "hint": "You can change the above text."
+        }
+}
